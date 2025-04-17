@@ -2339,3 +2339,52 @@ Exception: The official Pinecone python package has been renamed from `pinecone-
 [2025-04-17T19:07:18.794+0000] {logging_mixin.py:190} INFO - [2025-04-17T19:07:18.793+0000] {dag.py:3229} INFO - Sync 1 DAGs
 [2025-04-17T19:07:18.804+0000] {logging_mixin.py:190} INFO - [2025-04-17T19:07:18.804+0000] {dag.py:4156} INFO - Setting next_dagrun for hw8_create_embeddings_ingest to None, run_after=None
 [2025-04-17T19:07:18.833+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/hw8_3_create_embeddings.py took 0.823 seconds
+[2025-04-17T19:07:49.172+0000] {processor.py:186} INFO - Started process (PID=8221) to work on /opt/airflow/dags/hw8_3_create_embeddings.py
+[2025-04-17T19:07:49.180+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/hw8_3_create_embeddings.py for tasks to queue
+[2025-04-17T19:07:49.195+0000] {logging_mixin.py:190} INFO - [2025-04-17T19:07:49.193+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/hw8_3_create_embeddings.py
+[2025-04-17T19:07:50.335+0000] {processor.py:925} INFO - DAG(s) 'hw8_create_embeddings_ingest' retrieved from /opt/airflow/dags/hw8_3_create_embeddings.py
+[2025-04-17T19:07:50.389+0000] {logging_mixin.py:190} INFO - [2025-04-17T19:07:50.388+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-04-17T19:07:50.408+0000] {logging_mixin.py:190} INFO - [2025-04-17T19:07:50.408+0000] {dag.py:4156} INFO - Setting next_dagrun for hw8_create_embeddings_ingest to None, run_after=None
+[2025-04-17T19:07:50.441+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/hw8_3_create_embeddings.py took 1.293 seconds
+[2025-04-17T19:08:20.912+0000] {processor.py:186} INFO - Started process (PID=8254) to work on /opt/airflow/dags/hw8_3_create_embeddings.py
+[2025-04-17T19:08:20.983+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/hw8_3_create_embeddings.py for tasks to queue
+[2025-04-17T19:08:20.992+0000] {logging_mixin.py:190} INFO - [2025-04-17T19:08:20.991+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/hw8_3_create_embeddings.py
+[2025-04-17T19:08:21.882+0000] {processor.py:925} INFO - DAG(s) 'hw8_create_embeddings_ingest' retrieved from /opt/airflow/dags/hw8_3_create_embeddings.py
+[2025-04-17T19:08:21.914+0000] {logging_mixin.py:190} INFO - [2025-04-17T19:08:21.914+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-04-17T19:08:21.927+0000] {logging_mixin.py:190} INFO - [2025-04-17T19:08:21.927+0000] {dag.py:4156} INFO - Setting next_dagrun for hw8_create_embeddings_ingest to None, run_after=None
+[2025-04-17T19:08:21.940+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/hw8_3_create_embeddings.py took 1.054 seconds
+[2025-04-17T19:08:52.664+0000] {processor.py:186} INFO - Started process (PID=8287) to work on /opt/airflow/dags/hw8_3_create_embeddings.py
+[2025-04-17T19:08:52.667+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/hw8_3_create_embeddings.py for tasks to queue
+[2025-04-17T19:08:52.670+0000] {logging_mixin.py:190} INFO - [2025-04-17T19:08:52.670+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/hw8_3_create_embeddings.py
+[2025-04-17T19:08:53.220+0000] {processor.py:925} INFO - DAG(s) 'hw8_create_embeddings_ingest' retrieved from /opt/airflow/dags/hw8_3_create_embeddings.py
+[2025-04-17T19:08:53.240+0000] {logging_mixin.py:190} INFO - [2025-04-17T19:08:53.239+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-04-17T19:08:53.249+0000] {logging_mixin.py:190} INFO - [2025-04-17T19:08:53.249+0000] {dag.py:4156} INFO - Setting next_dagrun for hw8_create_embeddings_ingest to None, run_after=None
+[2025-04-17T19:08:53.262+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/hw8_3_create_embeddings.py took 0.610 seconds
+[2025-04-17T19:09:23.894+0000] {processor.py:186} INFO - Started process (PID=8320) to work on /opt/airflow/dags/hw8_3_create_embeddings.py
+[2025-04-17T19:09:23.897+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/hw8_3_create_embeddings.py for tasks to queue
+[2025-04-17T19:09:23.900+0000] {logging_mixin.py:190} INFO - [2025-04-17T19:09:23.900+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/hw8_3_create_embeddings.py
+[2025-04-17T19:09:24.487+0000] {processor.py:925} INFO - DAG(s) 'hw8_create_embeddings_ingest' retrieved from /opt/airflow/dags/hw8_3_create_embeddings.py
+[2025-04-17T19:09:24.508+0000] {logging_mixin.py:190} INFO - [2025-04-17T19:09:24.508+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-04-17T19:09:24.515+0000] {logging_mixin.py:190} INFO - [2025-04-17T19:09:24.515+0000] {dag.py:4156} INFO - Setting next_dagrun for hw8_create_embeddings_ingest to None, run_after=None
+[2025-04-17T19:09:24.526+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/hw8_3_create_embeddings.py took 0.657 seconds
+[2025-04-17T19:09:55.086+0000] {processor.py:186} INFO - Started process (PID=8353) to work on /opt/airflow/dags/hw8_3_create_embeddings.py
+[2025-04-17T19:09:55.088+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/hw8_3_create_embeddings.py for tasks to queue
+[2025-04-17T19:09:55.092+0000] {logging_mixin.py:190} INFO - [2025-04-17T19:09:55.091+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/hw8_3_create_embeddings.py
+[2025-04-17T19:09:55.731+0000] {processor.py:925} INFO - DAG(s) 'hw8_create_embeddings_ingest' retrieved from /opt/airflow/dags/hw8_3_create_embeddings.py
+[2025-04-17T19:09:55.753+0000] {logging_mixin.py:190} INFO - [2025-04-17T19:09:55.752+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-04-17T19:09:55.760+0000] {logging_mixin.py:190} INFO - [2025-04-17T19:09:55.760+0000] {dag.py:4156} INFO - Setting next_dagrun for hw8_create_embeddings_ingest to None, run_after=None
+[2025-04-17T19:09:55.773+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/hw8_3_create_embeddings.py took 0.709 seconds
+[2025-04-17T19:10:26.498+0000] {processor.py:186} INFO - Started process (PID=8386) to work on /opt/airflow/dags/hw8_3_create_embeddings.py
+[2025-04-17T19:10:26.502+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/hw8_3_create_embeddings.py for tasks to queue
+[2025-04-17T19:10:26.510+0000] {logging_mixin.py:190} INFO - [2025-04-17T19:10:26.510+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/hw8_3_create_embeddings.py
+[2025-04-17T19:10:27.227+0000] {processor.py:925} INFO - DAG(s) 'hw8_create_embeddings_ingest' retrieved from /opt/airflow/dags/hw8_3_create_embeddings.py
+[2025-04-17T19:10:27.247+0000] {logging_mixin.py:190} INFO - [2025-04-17T19:10:27.247+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-04-17T19:10:27.259+0000] {logging_mixin.py:190} INFO - [2025-04-17T19:10:27.259+0000] {dag.py:4156} INFO - Setting next_dagrun for hw8_create_embeddings_ingest to None, run_after=None
+[2025-04-17T19:10:27.274+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/hw8_3_create_embeddings.py took 0.788 seconds
+[2025-04-17T19:10:57.633+0000] {processor.py:186} INFO - Started process (PID=8424) to work on /opt/airflow/dags/hw8_3_create_embeddings.py
+[2025-04-17T19:10:57.634+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/hw8_3_create_embeddings.py for tasks to queue
+[2025-04-17T19:10:57.635+0000] {logging_mixin.py:190} INFO - [2025-04-17T19:10:57.635+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/hw8_3_create_embeddings.py
+[2025-04-17T19:10:58.117+0000] {processor.py:925} INFO - DAG(s) 'hw8_create_embeddings_ingest' retrieved from /opt/airflow/dags/hw8_3_create_embeddings.py
+[2025-04-17T19:10:58.138+0000] {logging_mixin.py:190} INFO - [2025-04-17T19:10:58.138+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-04-17T19:10:58.150+0000] {logging_mixin.py:190} INFO - [2025-04-17T19:10:58.149+0000] {dag.py:4156} INFO - Setting next_dagrun for hw8_create_embeddings_ingest to None, run_after=None
+[2025-04-17T19:10:58.165+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/hw8_3_create_embeddings.py took 0.537 seconds

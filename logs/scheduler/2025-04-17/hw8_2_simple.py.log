@@ -1920,3 +1920,45 @@
 [2025-04-17T19:07:41.575+0000] {logging_mixin.py:190} INFO - [2025-04-17T19:07:41.575+0000] {dag.py:3229} INFO - Sync 1 DAGs
 [2025-04-17T19:07:41.902+0000] {logging_mixin.py:190} INFO - [2025-04-17T19:07:41.901+0000] {dag.py:4156} INFO - Setting next_dagrun for hw8_create_pinecone_index_simple to None, run_after=None
 [2025-04-17T19:07:41.918+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/hw8_2_simple.py took 0.443 seconds
+[2025-04-17T19:08:12.692+0000] {processor.py:186} INFO - Started process (PID=8238) to work on /opt/airflow/dags/hw8_2_simple.py
+[2025-04-17T19:08:12.697+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/hw8_2_simple.py for tasks to queue
+[2025-04-17T19:08:12.707+0000] {logging_mixin.py:190} INFO - [2025-04-17T19:08:12.706+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/hw8_2_simple.py
+[2025-04-17T19:08:12.753+0000] {processor.py:925} INFO - DAG(s) 'hw8_create_pinecone_index_simple' retrieved from /opt/airflow/dags/hw8_2_simple.py
+[2025-04-17T19:08:12.816+0000] {logging_mixin.py:190} INFO - [2025-04-17T19:08:12.816+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-04-17T19:08:12.842+0000] {logging_mixin.py:190} INFO - [2025-04-17T19:08:12.842+0000] {dag.py:4156} INFO - Setting next_dagrun for hw8_create_pinecone_index_simple to None, run_after=None
+[2025-04-17T19:08:12.872+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/hw8_2_simple.py took 0.204 seconds
+[2025-04-17T19:08:43.447+0000] {processor.py:186} INFO - Started process (PID=8271) to work on /opt/airflow/dags/hw8_2_simple.py
+[2025-04-17T19:08:43.450+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/hw8_2_simple.py for tasks to queue
+[2025-04-17T19:08:43.454+0000] {logging_mixin.py:190} INFO - [2025-04-17T19:08:43.453+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/hw8_2_simple.py
+[2025-04-17T19:08:43.485+0000] {processor.py:925} INFO - DAG(s) 'hw8_create_pinecone_index_simple' retrieved from /opt/airflow/dags/hw8_2_simple.py
+[2025-04-17T19:08:43.524+0000] {logging_mixin.py:190} INFO - [2025-04-17T19:08:43.524+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-04-17T19:08:43.552+0000] {logging_mixin.py:190} INFO - [2025-04-17T19:08:43.552+0000] {dag.py:4156} INFO - Setting next_dagrun for hw8_create_pinecone_index_simple to None, run_after=None
+[2025-04-17T19:08:43.570+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/hw8_2_simple.py took 0.137 seconds
+[2025-04-17T19:09:13.683+0000] {processor.py:186} INFO - Started process (PID=8304) to work on /opt/airflow/dags/hw8_2_simple.py
+[2025-04-17T19:09:13.685+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/hw8_2_simple.py for tasks to queue
+[2025-04-17T19:09:13.692+0000] {logging_mixin.py:190} INFO - [2025-04-17T19:09:13.691+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/hw8_2_simple.py
+[2025-04-17T19:09:13.717+0000] {processor.py:925} INFO - DAG(s) 'hw8_create_pinecone_index_simple' retrieved from /opt/airflow/dags/hw8_2_simple.py
+[2025-04-17T19:09:13.769+0000] {logging_mixin.py:190} INFO - [2025-04-17T19:09:13.768+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-04-17T19:09:14.074+0000] {logging_mixin.py:190} INFO - [2025-04-17T19:09:14.074+0000] {dag.py:4156} INFO - Setting next_dagrun for hw8_create_pinecone_index_simple to None, run_after=None
+[2025-04-17T19:09:14.088+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/hw8_2_simple.py took 0.417 seconds
+[2025-04-17T19:09:44.889+0000] {processor.py:186} INFO - Started process (PID=8337) to work on /opt/airflow/dags/hw8_2_simple.py
+[2025-04-17T19:09:44.892+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/hw8_2_simple.py for tasks to queue
+[2025-04-17T19:09:44.898+0000] {logging_mixin.py:190} INFO - [2025-04-17T19:09:44.897+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/hw8_2_simple.py
+[2025-04-17T19:09:44.938+0000] {processor.py:925} INFO - DAG(s) 'hw8_create_pinecone_index_simple' retrieved from /opt/airflow/dags/hw8_2_simple.py
+[2025-04-17T19:09:45.002+0000] {logging_mixin.py:190} INFO - [2025-04-17T19:09:45.001+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-04-17T19:09:45.033+0000] {logging_mixin.py:190} INFO - [2025-04-17T19:09:45.032+0000] {dag.py:4156} INFO - Setting next_dagrun for hw8_create_pinecone_index_simple to None, run_after=None
+[2025-04-17T19:09:45.056+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/hw8_2_simple.py took 0.186 seconds
+[2025-04-17T19:10:15.188+0000] {processor.py:186} INFO - Started process (PID=8370) to work on /opt/airflow/dags/hw8_2_simple.py
+[2025-04-17T19:10:15.190+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/hw8_2_simple.py for tasks to queue
+[2025-04-17T19:10:15.194+0000] {logging_mixin.py:190} INFO - [2025-04-17T19:10:15.193+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/hw8_2_simple.py
+[2025-04-17T19:10:15.220+0000] {processor.py:925} INFO - DAG(s) 'hw8_create_pinecone_index_simple' retrieved from /opt/airflow/dags/hw8_2_simple.py
+[2025-04-17T19:10:15.265+0000] {logging_mixin.py:190} INFO - [2025-04-17T19:10:15.264+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-04-17T19:10:15.282+0000] {logging_mixin.py:190} INFO - [2025-04-17T19:10:15.282+0000] {dag.py:4156} INFO - Setting next_dagrun for hw8_create_pinecone_index_simple to None, run_after=None
+[2025-04-17T19:10:15.306+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/hw8_2_simple.py took 0.133 seconds
+[2025-04-17T19:10:45.585+0000] {processor.py:186} INFO - Started process (PID=8403) to work on /opt/airflow/dags/hw8_2_simple.py
+[2025-04-17T19:10:45.587+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/hw8_2_simple.py for tasks to queue
+[2025-04-17T19:10:45.597+0000] {logging_mixin.py:190} INFO - [2025-04-17T19:10:45.596+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/hw8_2_simple.py
+[2025-04-17T19:10:45.616+0000] {processor.py:925} INFO - DAG(s) 'hw8_create_pinecone_index_simple' retrieved from /opt/airflow/dags/hw8_2_simple.py
+[2025-04-17T19:10:45.657+0000] {logging_mixin.py:190} INFO - [2025-04-17T19:10:45.657+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-04-17T19:10:45.960+0000] {logging_mixin.py:190} INFO - [2025-04-17T19:10:45.960+0000] {dag.py:4156} INFO - Setting next_dagrun for hw8_create_pinecone_index_simple to None, run_after=None
+[2025-04-17T19:10:45.974+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/hw8_2_simple.py took 0.400 seconds
