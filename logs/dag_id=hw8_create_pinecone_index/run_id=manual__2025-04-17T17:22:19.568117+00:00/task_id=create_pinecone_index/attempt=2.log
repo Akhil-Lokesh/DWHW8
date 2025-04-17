@@ -1,0 +1,198 @@
+[2025-04-17T17:27:23.522+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-17T17:27:23.534+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: hw8_create_pinecone_index.create_pinecone_index manual__2025-04-17T17:22:19.568117+00:00 [queued]>
+[2025-04-17T17:27:23.541+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: hw8_create_pinecone_index.create_pinecone_index manual__2025-04-17T17:22:19.568117+00:00 [queued]>
+[2025-04-17T17:27:23.541+0000] {taskinstance.py:2865} INFO - Starting attempt 2 of 2
+[2025-04-17T17:27:23.550+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): create_pinecone_index> on 2025-04-17 17:22:19.568117+00:00
+[2025-04-17T17:27:23.556+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'hw8_create_pinecone_index', 'create_pinecone_index', 'manual__2025-04-17T17:22:19.568117+00:00', '--job-id', '9', '--raw', '--subdir', 'DAGS_FOLDER/hw8_2_create_pinecone_index.py', '--cfg-path', '/tmp/tmpzkggavsk']
+[2025-04-17T17:27:23.559+0000] {standard_task_runner.py:105} INFO - Job 9: Subtask create_pinecone_index
+[2025-04-17T17:27:23.558+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=1597) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-04-17T17:27:23.560+0000] {standard_task_runner.py:72} INFO - Started process 1598 to run task
+[2025-04-17T17:27:23.590+0000] {task_command.py:467} INFO - Running <TaskInstance: hw8_create_pinecone_index.create_pinecone_index manual__2025-04-17T17:22:19.568117+00:00 [running]> on host 50576508c375
+[2025-04-17T17:27:23.647+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='hw8_create_pinecone_index' AIRFLOW_CTX_TASK_ID='create_pinecone_index' AIRFLOW_CTX_EXECUTION_DATE='2025-04-17T17:22:19.568117+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-17T17:22:19.568117+00:00'
+[2025-04-17T17:27:23.647+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-04-17T17:27:23.754+0000] {logging_mixin.py:190} INFO - Successfully imported pinecone package with new API
+[2025-04-17T17:27:23.772+0000] {logging_mixin.py:190} INFO - Initializing Pinecone with API key
+[2025-04-17T17:27:24.640+0000] {logging_mixin.py:190} INFO - Error checking existing indexes: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'x-pinecone-api-version': '2025-01', 'x-cloud-trace-context': '4e468afdf6a632444a8199565e7ff322', 'date': 'Thu, 17 Apr 2025 17:27:24 GMT', 'content-type': 'text/html', 'server': 'Google Frontend', 'Content-Length': '15', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: Invalid API Key
+[2025-04-17T17:27:24.641+0000] {logging_mixin.py:190} INFO - Creating new index: medium-articles-index
+[2025-04-17T17:27:24.967+0000] {logging_mixin.py:190} INFO - Error with ServerlessSpec creation: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'x-pinecone-api-version': '2025-01', 'x-cloud-trace-context': '82c56395e9379b744a8199565e7ff6af', 'date': 'Thu, 17 Apr 2025 17:27:25 GMT', 'content-type': 'text/html', 'server': 'Google Frontend', 'Content-Length': '15', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: Invalid API Key
+[2025-04-17T17:27:24.967+0000] {logging_mixin.py:190} INFO - Trying alternative creation method...
+[2025-04-17T17:27:24.967+0000] {logging_mixin.py:190} INFO - All attempts to create index failed: Pinecone.create_index() missing 1 required positional argument: 'spec'
+[2025-04-17T17:27:24.968+0000] {taskinstance.py:3310} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/airflow/dags/hw8_2_create_pinecone_index.py", line 67, in create_pinecone_index
+    pc.create_index(
+  File "/home/airflow/.local/lib/python3.12/site-packages/pinecone/control/pinecone.py", line 143, in create_index
+    resp = self.index_api.create_index(create_index_request=req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pinecone/openapi_support/endpoint.py", line 102, in __call__
+    return self.callable(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pinecone/core/openapi/db_control/api/manage_indexes_api.py", line 235, in __create_index
+    return self.call_with_http_info(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pinecone/openapi_support/endpoint.py", line 134, in call_with_http_info
+    return self.api_client.call_api(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pinecone/openapi_support/api_client.py", line 300, in call_api
+    return self.__call_api(
+           ^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pinecone/openapi_support/api_client.py", line 178, in __call_api
+    raise e
+  File "/home/airflow/.local/lib/python3.12/site-packages/pinecone/openapi_support/api_client.py", line 166, in __call_api
+    response_data = self.request(
+                    ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pinecone/openapi_support/api_client.py", line 380, in request
+    return self.rest_client.POST(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pinecone/openapi_support/rest_utils.py", line 146, in POST
+    return self.request(
+           ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pinecone/openapi_support/rest_urllib3.py", line 260, in request
+    return raise_exceptions_or_return(r)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pinecone/openapi_support/rest_utils.py", line 38, in raise_exceptions_or_return
+    raise UnauthorizedException(http_resp=r)
+pinecone.openapi_support.exceptions.UnauthorizedException: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'x-pinecone-api-version': '2025-01', 'x-cloud-trace-context': '82c56395e9379b744a8199565e7ff6af', 'date': 'Thu, 17 Apr 2025 17:27:25 GMT', 'content-type': 'text/html', 'server': 'Google Frontend', 'Content-Length': '15', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: Invalid API Key
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/hw8_2_create_pinecone_index.py", line 82, in create_pinecone_index
+    pc.create_index(
+TypeError: Pinecone.create_index() missing 1 required positional argument: 'spec'
+[2025-04-17T17:27:24.979+0000] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=hw8_create_pinecone_index, task_id=create_pinecone_index, run_id=manual__2025-04-17T17:22:19.568117+00:00, execution_date=20250417T172219, start_date=20250417T172723, end_date=20250417T172724
+[2025-04-17T17:27:25.516+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-04-17T17:27:25.517+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 9 for task create_pinecone_index (Pinecone.create_index() missing 1 required positional argument: 'spec'; 1598)
+Traceback (most recent call last):
+  File "/opt/airflow/dags/hw8_2_create_pinecone_index.py", line 67, in create_pinecone_index
+    pc.create_index(
+  File "/home/airflow/.local/lib/python3.12/site-packages/pinecone/control/pinecone.py", line 143, in create_index
+    resp = self.index_api.create_index(create_index_request=req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pinecone/openapi_support/endpoint.py", line 102, in __call__
+    return self.callable(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pinecone/core/openapi/db_control/api/manage_indexes_api.py", line 235, in __create_index
+    return self.call_with_http_info(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pinecone/openapi_support/endpoint.py", line 134, in call_with_http_info
+    return self.api_client.call_api(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pinecone/openapi_support/api_client.py", line 300, in call_api
+    return self.__call_api(
+           ^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pinecone/openapi_support/api_client.py", line 178, in __call_api
+    raise e
+  File "/home/airflow/.local/lib/python3.12/site-packages/pinecone/openapi_support/api_client.py", line 166, in __call_api
+    response_data = self.request(
+                    ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pinecone/openapi_support/api_client.py", line 380, in request
+    return self.rest_client.POST(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pinecone/openapi_support/rest_utils.py", line 146, in POST
+    return self.request(
+           ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pinecone/openapi_support/rest_urllib3.py", line 260, in request
+    return raise_exceptions_or_return(r)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pinecone/openapi_support/rest_utils.py", line 38, in raise_exceptions_or_return
+    raise UnauthorizedException(http_resp=r)
+pinecone.openapi_support.exceptions.UnauthorizedException: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'x-pinecone-api-version': '2025-01', 'x-cloud-trace-context': '82c56395e9379b744a8199565e7ff6af', 'date': 'Thu, 17 Apr 2025 17:27:25 GMT', 'content-type': 'text/html', 'server': 'Google Frontend', 'Content-Length': '15', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: Invalid API Key
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 115, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3004, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3158, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3182, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/hw8_2_create_pinecone_index.py", line 82, in create_pinecone_index
+    pc.create_index(
+TypeError: Pinecone.create_index() missing 1 required positional argument: 'spec'
+[2025-04-17T17:27:25.573+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-04-17T17:27:25.591+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-17T17:27:25.592+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

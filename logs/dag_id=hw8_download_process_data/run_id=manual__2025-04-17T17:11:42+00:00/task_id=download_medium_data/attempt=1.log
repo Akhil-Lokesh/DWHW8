@@ -1,0 +1,19 @@
+[2025-04-17T17:11:43.472+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-17T17:11:43.483+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: hw8_download_process_data.download_medium_data manual__2025-04-17T17:11:42+00:00 [queued]>
+[2025-04-17T17:11:43.490+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: hw8_download_process_data.download_medium_data manual__2025-04-17T17:11:42+00:00 [queued]>
+[2025-04-17T17:11:43.491+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2025-04-17T17:11:43.498+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): download_medium_data> on 2025-04-17 17:11:42+00:00
+[2025-04-17T17:11:43.509+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=465) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-04-17T17:11:43.508+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'hw8_download_process_data', 'download_medium_data', 'manual__2025-04-17T17:11:42+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/hw8_1_download_data.py', '--cfg-path', '/tmp/tmpvge1z4g5']
+[2025-04-17T17:11:43.510+0000] {standard_task_runner.py:105} INFO - Job 2: Subtask download_medium_data
+[2025-04-17T17:11:43.510+0000] {standard_task_runner.py:72} INFO - Started process 467 to run task
+[2025-04-17T17:11:43.543+0000] {task_command.py:467} INFO - Running <TaskInstance: hw8_download_process_data.download_medium_data manual__2025-04-17T17:11:42+00:00 [running]> on host 50576508c375
+[2025-04-17T17:11:43.589+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='hw8_download_process_data' AIRFLOW_CTX_TASK_ID='download_medium_data' AIRFLOW_CTX_EXECUTION_DATE='2025-04-17T17:11:42+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-17T17:11:42+00:00'
+[2025-04-17T17:11:43.590+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-04-17T17:11:44.445+0000] {logging_mixin.py:190} INFO - File downloaded to: /opt/***/dags/medium_articles.csv
+[2025-04-17T17:11:44.446+0000] {python.py:240} INFO - Done. Returned value was: /opt/***/dags/medium_articles.csv
+[2025-04-17T17:11:44.462+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-04-17T17:11:44.462+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=hw8_download_process_data, task_id=download_medium_data, run_id=manual__2025-04-17T17:11:42+00:00, execution_date=20250417T171142, start_date=20250417T171143, end_date=20250417T171144
+[2025-04-17T17:11:44.494+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-17T17:11:44.507+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-04-17T17:11:44.508+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
