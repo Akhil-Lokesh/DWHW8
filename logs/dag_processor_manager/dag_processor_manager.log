@@ -3136,3 +3136,27 @@ File Path                                         PID    Runtime      # DAGs    
 /opt/airflow/dags/hw8_2_simple.py                                          1           0  0.23s           2025-04-17T18:45:48                      10
 /opt/airflow/dags/hw8_2_create_pinecone_index.py                           1           0  0.19s           2025-04-17T18:45:48                      10
 ================================================================================
+[2025-04-17T18:46:23.411+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/hw8_3_create_embeddings.py                               1           0  0.84s           2025-04-17T18:45:58                      10
+/opt/airflow/dags/hw8_1_download_data.py                                   1           0  0.80s           2025-04-17T18:45:58                      10
+/opt/airflow/dags/hw8_2_simple.py                                          1           0  0.28s           2025-04-17T18:46:18                      10
+/opt/airflow/dags/hw8_4_run_search.py                                      1           0  0.20s           2025-04-17T18:46:07                      10
+/opt/airflow/dags/hw8_2_create_pinecone_index.py                           1           0  0.20s           2025-04-17T18:46:18                      10
+================================================================================
+[2025-04-17T18:46:53.578+0000] {manager.py:1008} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/hw8_3_create_embeddings.py                               1           0  0.68s           2025-04-17T18:46:30                      10
+/opt/airflow/dags/hw8_1_download_data.py                                   1           0  0.65s           2025-04-17T18:46:30                      10
+/opt/airflow/dags/hw8_2_simple.py                                          1           0  0.18s           2025-04-17T18:46:49                      10
+/opt/airflow/dags/hw8_4_run_search.py                                      1           0  0.17s           2025-04-17T18:46:37                      10
+/opt/airflow/dags/hw8_2_create_pinecone_index.py                           1           0  0.13s           2025-04-17T18:46:49                      10
+================================================================================

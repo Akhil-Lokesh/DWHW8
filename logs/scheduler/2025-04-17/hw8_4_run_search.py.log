@@ -2093,3 +2093,24 @@ Exception: The official Pinecone python package has been renamed from `pinecone-
 [2025-04-17T18:45:36.513+0000] {logging_mixin.py:190} INFO - [2025-04-17T18:45:36.512+0000] {dag.py:3229} INFO - Sync 1 DAGs
 [2025-04-17T18:45:36.543+0000] {logging_mixin.py:190} INFO - [2025-04-17T18:45:36.543+0000] {dag.py:4156} INFO - Setting next_dagrun for hw8_run_pinecone_search to None, run_after=None
 [2025-04-17T18:45:36.575+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/hw8_4_run_search.py took 0.171 seconds
+[2025-04-17T18:46:07.092+0000] {processor.py:186} INFO - Started process (PID=6819) to work on /opt/airflow/dags/hw8_4_run_search.py
+[2025-04-17T18:46:07.094+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/hw8_4_run_search.py for tasks to queue
+[2025-04-17T18:46:07.100+0000] {logging_mixin.py:190} INFO - [2025-04-17T18:46:07.098+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/hw8_4_run_search.py
+[2025-04-17T18:46:07.130+0000] {processor.py:925} INFO - DAG(s) 'hw8_run_pinecone_search' retrieved from /opt/airflow/dags/hw8_4_run_search.py
+[2025-04-17T18:46:07.175+0000] {logging_mixin.py:190} INFO - [2025-04-17T18:46:07.174+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-04-17T18:46:07.190+0000] {logging_mixin.py:190} INFO - [2025-04-17T18:46:07.190+0000] {dag.py:4156} INFO - Setting next_dagrun for hw8_run_pinecone_search to None, run_after=None
+[2025-04-17T18:46:07.222+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/hw8_4_run_search.py took 0.143 seconds
+[2025-04-17T18:46:37.305+0000] {processor.py:186} INFO - Started process (PID=6852) to work on /opt/airflow/dags/hw8_4_run_search.py
+[2025-04-17T18:46:37.307+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/hw8_4_run_search.py for tasks to queue
+[2025-04-17T18:46:37.311+0000] {logging_mixin.py:190} INFO - [2025-04-17T18:46:37.310+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/hw8_4_run_search.py
+[2025-04-17T18:46:37.326+0000] {processor.py:925} INFO - DAG(s) 'hw8_run_pinecone_search' retrieved from /opt/airflow/dags/hw8_4_run_search.py
+[2025-04-17T18:46:37.368+0000] {logging_mixin.py:190} INFO - [2025-04-17T18:46:37.367+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-04-17T18:46:37.396+0000] {logging_mixin.py:190} INFO - [2025-04-17T18:46:37.395+0000] {dag.py:4156} INFO - Setting next_dagrun for hw8_run_pinecone_search to None, run_after=None
+[2025-04-17T18:46:37.420+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/hw8_4_run_search.py took 0.126 seconds
+[2025-04-17T18:47:07.651+0000] {processor.py:186} INFO - Started process (PID=6885) to work on /opt/airflow/dags/hw8_4_run_search.py
+[2025-04-17T18:47:07.654+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/hw8_4_run_search.py for tasks to queue
+[2025-04-17T18:47:07.657+0000] {logging_mixin.py:190} INFO - [2025-04-17T18:47:07.656+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/hw8_4_run_search.py
+[2025-04-17T18:47:07.668+0000] {processor.py:925} INFO - DAG(s) 'hw8_run_pinecone_search' retrieved from /opt/airflow/dags/hw8_4_run_search.py
+[2025-04-17T18:47:07.699+0000] {logging_mixin.py:190} INFO - [2025-04-17T18:47:07.699+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-04-17T18:47:07.717+0000] {logging_mixin.py:190} INFO - [2025-04-17T18:47:07.717+0000] {dag.py:4156} INFO - Setting next_dagrun for hw8_run_pinecone_search to None, run_after=None
+[2025-04-17T18:47:07.744+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/hw8_4_run_search.py took 0.100 seconds

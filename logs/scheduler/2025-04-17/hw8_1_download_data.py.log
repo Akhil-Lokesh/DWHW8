@@ -1655,3 +1655,17 @@
 [2025-04-17T18:45:58.855+0000] {logging_mixin.py:190} INFO - [2025-04-17T18:45:58.855+0000] {dag.py:3229} INFO - Sync 1 DAGs
 [2025-04-17T18:45:58.867+0000] {logging_mixin.py:190} INFO - [2025-04-17T18:45:58.867+0000] {dag.py:4156} INFO - Setting next_dagrun for hw8_download_process_data to None, run_after=None
 [2025-04-17T18:45:58.884+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/hw8_1_download_data.py took 0.773 seconds
+[2025-04-17T18:46:29.531+0000] {processor.py:186} INFO - Started process (PID=6843) to work on /opt/airflow/dags/hw8_1_download_data.py
+[2025-04-17T18:46:29.537+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/hw8_1_download_data.py for tasks to queue
+[2025-04-17T18:46:29.543+0000] {logging_mixin.py:190} INFO - [2025-04-17T18:46:29.542+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/hw8_1_download_data.py
+[2025-04-17T18:46:30.096+0000] {processor.py:925} INFO - DAG(s) 'hw8_download_process_data' retrieved from /opt/airflow/dags/hw8_1_download_data.py
+[2025-04-17T18:46:30.116+0000] {logging_mixin.py:190} INFO - [2025-04-17T18:46:30.116+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-04-17T18:46:30.128+0000] {logging_mixin.py:190} INFO - [2025-04-17T18:46:30.127+0000] {dag.py:4156} INFO - Setting next_dagrun for hw8_download_process_data to None, run_after=None
+[2025-04-17T18:46:30.142+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/hw8_1_download_data.py took 0.623 seconds
+[2025-04-17T18:47:00.692+0000] {processor.py:186} INFO - Started process (PID=6876) to work on /opt/airflow/dags/hw8_1_download_data.py
+[2025-04-17T18:47:00.693+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/hw8_1_download_data.py for tasks to queue
+[2025-04-17T18:47:00.696+0000] {logging_mixin.py:190} INFO - [2025-04-17T18:47:00.696+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/hw8_1_download_data.py
+[2025-04-17T18:47:01.483+0000] {processor.py:925} INFO - DAG(s) 'hw8_download_process_data' retrieved from /opt/airflow/dags/hw8_1_download_data.py
+[2025-04-17T18:47:01.507+0000] {logging_mixin.py:190} INFO - [2025-04-17T18:47:01.507+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2025-04-17T18:47:01.515+0000] {logging_mixin.py:190} INFO - [2025-04-17T18:47:01.515+0000] {dag.py:4156} INFO - Setting next_dagrun for hw8_download_process_data to None, run_after=None
+[2025-04-17T18:47:01.527+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/hw8_1_download_data.py took 0.841 seconds
